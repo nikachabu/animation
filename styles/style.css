@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.anim{
+    position: relative;
+    height: 700px;
+    background-image: url(../image/street.webp);
+}
+.blue-car{
+    height: 150px;
+    width: 280px;
+    left: 0;
+    top: 400px;
+    position:absolute;
+    background-image: url(../image/car3.jpg);
+    background-size: cover;
+    animation-name: moveCar;
+    animation-duration: 4s;
+    animation-delay: 0.4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+
+}
+.red-car{
+    height: 120px;
+    width: 400px; 
+    right: 0;
+    top: 550px;
+    position: absolute;
+    background-image: url(../image/download.png);
+    background-size: cover;
+    animation-name: moveRedCar;
+    animation-duration: 4s;
+    animation-delay: 0.4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes moveCar{
+    form{
+        left: 0px;
+
+    }
+    to{
+        left:90%;
+    }
+}
+@keyframes moveRedCar{
+    form{
+        right: 0;
+       
+    }
+    to{
+        right: 90%;
+
+    }
+}
